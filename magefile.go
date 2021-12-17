@@ -51,7 +51,7 @@ func (Build) Source() error {
 	fmt.Print("env=", c.Env(), "\n")
 	fmt.Print("cmd=", mg.GoCmd(), "\n")
 	fmt.Print("args=", c.Args(), "\n")
-
+	fmt.Print("\n")
 	return sh.RunWith(c.Env(), mg.GoCmd(), c.Args()...)
 }
 
