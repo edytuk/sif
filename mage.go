@@ -18,8 +18,8 @@ import (
 )
 
 func main() {
-	fmt.Print("MAIN!")
-	fmt.Print(mage)
-	fmt.Print("Will do mage.Main()")
+	fmt.Print("MAIN!\n")
+	fmt.Print(mage.Main, "\n")
+	fmt.Print("Will do mage.Main()\n")
 	os.Exit(mage.Main())
 }
