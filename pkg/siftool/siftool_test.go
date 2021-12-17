@@ -1,3 +1,6 @@
+// Copyright (c) 2021 Apptainer a Series of LF Projects LLC
+//   For website terms of use, trademark policy, privacy policy and other
+//   project policies see https://lfprojects.org/policies
 // Copyright (c) 2021, Sylabs Inc. All rights reserved.
 // This software is licensed under a 3-clause BSD license. Please consult the
 // LICENSE file distributed with the sources of this project regarding your
@@ -10,8 +13,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/hpcng/sif/v2/internal/app/siftool"
-	"github.com/hpcng/sif/v2/pkg/sif"
+	"github.com/apptainer/sif/v2/internal/app/siftool"
+	"github.com/apptainer/sif/v2/pkg/sif"
 	"github.com/sebdah/goldie/v2"
 	"github.com/spf13/cobra"
 )
