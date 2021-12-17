@@ -13,6 +13,7 @@ package main
 
 import (
 	"fmt"
+
 	"github.com/magefile/mage/mg"
 	"github.com/magefile/mage/sh"
 	"github.com/sylabs/release-tools/pkg/cmd"
