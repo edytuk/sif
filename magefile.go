@@ -9,6 +9,7 @@
 package main
 
 import (
+	"fmt"
 	"github.com/magefile/mage/mg"
 	"github.com/magefile/mage/sh"
 	"github.com/sylabs/release-tools/pkg/cmd"
@@ -42,9 +43,14 @@ func (Build) Source() error {
 		cmd.OptBuildWithBuiltBy("mage"),
 		cmd.OptBuildWithGitDescription(d),
 	)
+	fmt.Print("c=", c, "\n")
+	fmt.Print("err=", err, "\n")
 	if err != nil {
 		return err
 	}
+	fmt.Print("env=", c.Env(), "\n")
+	fmt.Print("cmd=", mg.GoCmd(), "\n")
+	fmt.Print("args=", c.Args(), "\n")
 
 	return sh.RunWith(c.Env(), mg.GoCmd(), c.Args()...)
 }
