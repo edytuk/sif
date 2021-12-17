@@ -13,8 +13,13 @@ package main
 
 import (
 	"os"
-
+	"fmt"
 	"github.com/magefile/mage/mage"
 )
 
-func main() { os.Exit(mage.Main()) }
+func main() {
+	fmt.Print("MAIN!")
+	fmt.Print(mage)
+	fmt.Print("Will do mage.Main()")
+	os.Exit(mage.Main())
+}
