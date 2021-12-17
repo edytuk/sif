@@ -30,7 +30,7 @@ jobs:
           git diff --exit-code -- go.mod go.sum
 
       - name: Build Source
-        run: go run mage.go -debug -v build:source
+        run: go run mage.go -debug -v -l build:source
 
       - name: Install Lint
         uses: golangci/golangci-lint-action@v2
